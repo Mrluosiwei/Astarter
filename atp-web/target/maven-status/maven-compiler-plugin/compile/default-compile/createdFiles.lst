@@ -1,0 +1,5 @@
+com\autotest\astarte\web\service\impl\InterfaceServiceImpl.class
+com\autotest\astarte\web\controller\AtpInterfaceController.class
+com\autotest\astarte\web\mapper\InterfaceMapper.class
+com\autotest\astarte\web\service\InterfaceService.class
+com\autotest\astarte\web\AtpApplication.class

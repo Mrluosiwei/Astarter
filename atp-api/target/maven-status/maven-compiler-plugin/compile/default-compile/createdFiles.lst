@@ -1,0 +1,3 @@
+com\autotest\astarte\api\bean\InterfaceBean.class
+com\autotest\astarte\api\entity\Interface.class
+com\autotest\astarte\api\util\JsonParseUtil.class

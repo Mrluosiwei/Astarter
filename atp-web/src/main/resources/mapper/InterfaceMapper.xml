@@ -19,11 +19,19 @@
     </sql>
 
     <select id="selectInterfaceById" resultMap="BaseResultMap" parameterType="com.autotest.astarte.api.entity.Interface">
-        select *
+        select <include refid="ATP_INTERFACE_FILED"/>
         from atp_interface where id = #{id}
     </select>
 
     <select id="selectInterfaceByPage" resultMap="BaseResultMap" parameterType="com.autotest.astarte.api.entity.Interface">
         select * from atp_interface ${ew.customSqlSegment}
     </select>
+
+    <select id="deleteInterfaces" parameterType="com">
+        delete from atp_interface where id in
+        <foreach  item="item" collection="list" index="index"  open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
 </mapper>

@@ -7,48 +7,30 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Data
 @Accessors(chain = true)
-@TableName("atp_interface")
-public class Interface implements Serializable {
+@TableName("atp_system")
+public class AtpSystemEntity {
     @TableId(value = "ID", type = IdType.AUTO)
     private Long id;
+    @TableField(value = "SYSTEM_NAME")
+    private String systemName;
     @TableField(value = "SYSTEM_ID")
     private Long systemId;
     @TableField(value = "DESCRIPTION")
     private String description;
-    @TableField(value = "INTERFACE_NAME")
-    private String interfaceName;
-    @TableField(value = "INTERFACE_PATH")
-    private String interfacePath;
-    // http,tcp
-    @TableField(value = "INTERFACE_TYPE")
-    private String interfaceType;
     @TableField(value = "CREATE_USER")
     private String createUser;
     @TableField(value = "UPDATE_USER")
     private String updateUser;
+    @TableField(value = "CREATE_TIME")
+    private Timestamp createTime;
     @TableField(value = "UPDATE_TIME")
     private Timestamp updateTime;
-    @TableField(value = "REQUEST")
-    private String request;
-    @TableField(value = "RESPONSE")
-    private String response;
-    @TableField(value = "FORMAT")
-    private String format;
-    @TableField(value = "ENCODING")
-    private String encoding;
-    @TableField(value = "READ_TIME")
-    private Long readTime;
-    @TableField(value = "TEMPLATE_ID")
-    private Long templateId;
     @TableField(value = "IS_DELETE")
     private Long isDelete;
-    @TableField(value = "VERSION")
-    private String version;
-
-
+    @TableField(value = "LEADER")
+    private String leader;
 }

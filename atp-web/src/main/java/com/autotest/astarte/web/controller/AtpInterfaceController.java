@@ -35,4 +35,10 @@ public class AtpInterfaceController {
         return atpResponse;
     }
 
+    @PostMapping("/saveInterface")
+    public AtpResponse saveInterface(@RequestBody InterfaceBean entity){
+        AtpResponse atpResponse = interfaceService.saveInterface(entity);
+        return atpResponse;
+    }
+
 }

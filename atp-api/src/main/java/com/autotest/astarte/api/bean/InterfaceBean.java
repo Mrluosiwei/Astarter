@@ -1,7 +1,6 @@
 package com.autotest.astarte.api.bean;
 
 import com.autotest.astarte.api.bean.common.PageEntity;
-import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 import java.sql.Timestamp;
@@ -25,5 +24,13 @@ public class InterfaceBean extends PageEntity {
     private String updateUser;
 
     private Timestamp updateTime;
+    private String request;
+    private String response;
+    private String format;
+    private String encoding;
+    private Long readTime;
+    private Long templateId;
+    private Long isDelete;
+    private String version;
 
 }

@@ -18,8 +18,10 @@ public interface InterfaceService {
 
     AtpResponse saveInterface(InterfaceBean entity);
 
-    AtpResponse updateInterface( InterfaceBean entity);
+    AtpResponse updateInterface(InterfaceBean entity);
 
     AtpResponse deleteInterface(String ids);
+
+    AtpResponse debugInterface(InterfaceBean entity);
 
 }

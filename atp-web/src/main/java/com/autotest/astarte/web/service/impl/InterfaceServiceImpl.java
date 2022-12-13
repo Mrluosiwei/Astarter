@@ -114,4 +114,10 @@ public class InterfaceServiceImpl implements InterfaceService {
         }
     }
 
+    @Override
+    public AtpResponse debugInterface(InterfaceBean entity) {
+        
+        return null;
+    }
+
 }

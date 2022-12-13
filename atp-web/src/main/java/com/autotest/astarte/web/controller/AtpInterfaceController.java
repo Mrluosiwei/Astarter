@@ -41,4 +41,9 @@ public class AtpInterfaceController {
         return atpResponse;
     }
 
+    @PostMapping("/debugInterface")
+    public AtpResponse debugInterface(@RequestBody InterfaceBean entity){
+        AtpResponse atpResponse = interfaceService.debugInterface(entity);
+        return atpResponse;
+    }
 }

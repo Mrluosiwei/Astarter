@@ -21,7 +21,6 @@ public class AtpSystemEnvController {
     @Autowired
     AtpSystemEnvService AtpSystemEnvService;
 
-
     @PostMapping("/querySystemEnvOne")
     public AtpResponse queryInterfaceOne(@RequestBody AtpSystemEnvBean entity){
         AtpResponse AtpResponse = AtpSystemEnvService.selectSystemEnvOne(entity);
